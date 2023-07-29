@@ -4,7 +4,7 @@
     "rel": "1"
   },
   "git": {
-    "repo": "https://github.com/c-basalt/streamlink/streamlink.git",
+    "repo": "https://github.com/c-basalt/streamlink.git",
     "ref": "6.0.0"
   },
   "assets": {

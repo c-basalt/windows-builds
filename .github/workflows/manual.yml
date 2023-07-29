@@ -1,4 +1,4 @@
-name: Nightly builds
+name: Manual builds
 
 on: workflow_dispatch
 
