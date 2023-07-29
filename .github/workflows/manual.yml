@@ -1,8 +1,6 @@
 name: Nightly builds
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
+on: workflow_dispatch
 
 jobs:
   build:
@@ -40,7 +38,7 @@ jobs:
       - name: Build
         run: |
           export SOURCE_DATE_EPOCH=$(git show -s --format=%ct)
-          "./build-${{ matrix.build }}.sh" "${{ matrix.buildname }}" "" master
+          "./build-${{ matrix.build }}.sh" "${{ matrix.buildname }}" "" rec
       - name: Get file name
         id: vars
         run: |
